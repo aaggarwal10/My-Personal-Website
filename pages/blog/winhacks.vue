@@ -22,12 +22,12 @@
     </v-row>
     <v-row justify="center" align="center" class="grey darken-4 pb-0">
       <v-col cols="10" class="pb-0">
-        <h2 :class="$vuetify.breakpoint.smAndDown ? 'display-2 font-weight-bold white--text mt-2 mb-2' : 'display-3 font-weight-bold white--text mt-2 mb-1'" align="center">My First Post - Blog #0</h2>
+        <h2 :class="$vuetify.breakpoint.smAndDown ? 'display-2 font-weight-bold white--text mt-2 mb-2' : 'display-3 font-weight-bold white--text mt-2 mb-1'" align="center">Winning WinHacks 2021</h2>
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="grey darken-4 pb-4 pt-0">
       <v-col cols="10" class="pb-0 pt-0">
-        <h2 class="subtitle-1 font-weight-light white--text mt-2 mb-6">Date Posted: <span class="font-weight-bold"> 03-01-21 </span></h2>
+        <h2 class="subtitle-1 font-weight-light white--text mt-2 mb-6">Date Posted: <span class="font-weight-bold"> 03-29-21 </span></h2>
       </v-col>
     </v-row>
     
@@ -35,23 +35,20 @@
     <v-row justify="center" vertical-align="center" class="grey darken-4">
       <v-col cols="8" class>
         <v-container fill-height fluid class="profile"> 
-          <v-img eager contain height="30vh" align="center" justify = "center" src = "/blog-imgs/logo-aa.png"></v-img>
+          <v-img eager contain height="30vh" align="center" justify = "center" src = "/blog-imgs/winhacks.png"></v-img>
         </v-container>
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="grey darken-4 pt-2 pb-16">
-      <v-col cols="10" class="pb-0">
-        <p> Just how array indexing starts at 0, this is my first blog: Blog #0. I plan to post the latest projects I have been working on and things I have been learning on this blog. I hope you enjoy the journey along with me. </p>
-        <p> Here's code blocks for testing purposes: </p>
-        <pre><code v-highlight class="python" color="black">import anish-life</code><code v-highlight class="python" color="black">date = "03/01/21"</code><code v-highlight class="python" color="black">anish-life.blog_start(date)</code></pre>
-
-
+      <v-col cols="10" class="pb-0 post-content">
+        <p> During the weekend, I competed in the University of Windsor's <a href="https://winhacks.ca/">WinHacks 2021</a> where my team and I made ChatSpace VR. ChatSpace VR is essentially a space in VR that allows for proximity chat with others. The app also holds three recreational games: Air Hockey, Table Tennis, and 8-Ball Pool. We really struggled in the first few hours to use the right technology. At first, we tried using Oculus, but the black screen issue that stopped the installation of the Oculus app stopped us from making progress. In the end, my team used the Windows Mixed Reality Headsets in Unity to make ChatSpace VR. We had many more network issues and compatability issues, but in the end, we were able to make an app that one the $1000 prize for making a Virtual Society for Mental Health.</p>
+        <p>For the complete submission of our project, visit our <a href="https://devpost.com/software/chatspace-vr">devpost</a>. For the source code, visit our <a href="https://github.com/Breality/ChatSpace-VR">github repository</a>.</p>
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="grey darken-4 pt-10 ma-0 pb-0">
       <v-col cols="12" class="pa-0">
       </v-col>
-
+      
     </v-row>
 
     <v-container class="pa-10"></v-container>
@@ -106,12 +103,18 @@
                     {type: 'mdi-github', link: 'https://github.com/aaggarwal10'},
                     {type: 'mdi-email', link: "mailto:hello@anishaggarwal.ca"}
                   ],
-        })
-
+        }),
     }
 </script>
 
 <style scoped>
+  .post-content a {
+    color: #adc0ffec;
+    text-decoration: none;
+  }
+  .post-content a:hover {
+    text-decoration: underline;
+  }
   code {
       background-color: rgb(0,0,0,1);
       color: #f8f8f2;

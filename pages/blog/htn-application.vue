@@ -22,12 +22,12 @@
     </v-row>
     <v-row justify="center" align="center" class="grey darken-4 pb-0">
       <v-col cols="10" class="pb-0">
-        <h2 :class="$vuetify.breakpoint.smAndDown ? 'display-2 font-weight-bold white--text mt-2 mb-2' : 'display-3 font-weight-bold white--text mt-2 mb-1'" align="center">My First Post - Blog #0</h2>
+        <h2 :class="$vuetify.breakpoint.smAndDown ? 'display-2 font-weight-bold white--text mt-2 mb-2' : 'display-3 font-weight-bold white--text mt-2 mb-1'" align="center">My HTN Challenge Solutions</h2>
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="grey darken-4 pb-4 pt-0">
       <v-col cols="10" class="pb-0 pt-0">
-        <h2 class="subtitle-1 font-weight-light white--text mt-2 mb-6">Date Posted: <span class="font-weight-bold"> 03-01-21 </span></h2>
+        <h2 class="subtitle-1 font-weight-light white--text mt-2 mb-6">Date Posted: <span class="font-weight-bold"> 03-23-21 </span></h2>
       </v-col>
     </v-row>
     
@@ -35,23 +35,22 @@
     <v-row justify="center" vertical-align="center" class="grey darken-4">
       <v-col cols="8" class>
         <v-container fill-height fluid class="profile"> 
-          <v-img eager contain height="30vh" align="center" justify = "center" src = "/blog-imgs/logo-aa.png"></v-img>
+          <v-img eager contain height="30vh" align="center" justify = "center" src = "/blog-imgs/htn.png"></v-img>
         </v-container>
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="grey darken-4 pt-2 pb-16">
-      <v-col cols="10" class="pb-0">
-        <p> Just how array indexing starts at 0, this is my first blog: Blog #0. I plan to post the latest projects I have been working on and things I have been learning on this blog. I hope you enjoy the journey along with me. </p>
-        <p> Here's code blocks for testing purposes: </p>
-        <pre><code v-highlight class="python" color="black">import anish-life</code><code v-highlight class="python" color="black">date = "03/01/21"</code><code v-highlight class="python" color="black">anish-life.blog_start(date)</code></pre>
-
-
+      <v-col cols="10" class="pb-0 post-content">
+        <p> Recently, I have applied to be on the <a href="https://hackthenorth.com/">Hack The North (HTN)</a> Organizer Team, specifically to the Backend and Frontend Teams. In the 'challenge' stage of this process, I learned a lot more about web development than I knew before.</p>
+        <p> For the <a href="https://gist.github.com/stevennx/0ba340300a1cd542a1e81e85dbbb81bf">Frontend Challenge Portion</a> (part of the application), applicants were to make a hypothetical schedule for a hackathon. I built the schedule using Vuetify implementing the Calendar component similar to what I did for Telecinic. However, through the process, I learned a lot about design and making a product functional. As the data was read in from a database, I made appropriate structures to splice all the data I needed. To check out my final product, go to <a href="https://app.anishaggarwal.ca/">app.anishaggarwal.ca</a>. For the complete submission, you can find it on <a href="https://github.com/aaggarwal10/HTN-Frontend">my github</a>.</p>
+        <p> For the <a href="https://gist.github.com/Advait-M/27f0f1582db447e24975597addf5c74e">Backend Challenge Portion</a> (part of the application), applicants were to make an API that stored and retrieved hacker data from a database. I built the API using REST, Express, and SQLite. I learned a lot about routing and proper databasing as this was the first time that I had done backend databasing before. Overall, I am proud of the fact that I was able to make use of the Sequelize ORM for simple and flexible databasing. Also, I was able to use apidocs to make my comments of endpoints into properly formated documentation. For the complete submission, you can find it on <a href="https://github.com/aaggarwal10/HTN-Backend-Application">my github</a>.</p>
+        <p> Overall, the HTN applications, although long and tiring, helped me learn a lot more about Web Development and expand my skills in the area.</p>
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="grey darken-4 pt-10 ma-0 pb-0">
       <v-col cols="12" class="pa-0">
       </v-col>
-
+      
     </v-row>
 
     <v-container class="pa-10"></v-container>
@@ -106,12 +105,18 @@
                     {type: 'mdi-github', link: 'https://github.com/aaggarwal10'},
                     {type: 'mdi-email', link: "mailto:hello@anishaggarwal.ca"}
                   ],
-        })
-
+        }),
     }
 </script>
 
 <style scoped>
+  .post-content a {
+    color: #adc0ffec;
+    text-decoration: none;
+  }
+  .post-content a:hover {
+    text-decoration: underline;
+  }
   code {
       background-color: rgb(0,0,0,1);
       color: #f8f8f2;

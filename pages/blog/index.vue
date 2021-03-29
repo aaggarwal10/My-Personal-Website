@@ -35,8 +35,8 @@
         <h2 class="display-3 font-weight-bold black--text mt-2 mb-6" id="blog" align="center">My Blog</h2>
       </v-col>
     </v-row>
-    <v-row v-for="a in articles" v-bind:key="a.title" justify="center" align="center" class = "d-flex flex-wrap align-content-space-around white pt-5 pl-5 pr-0 pb-16 ma-0">
-      <v-col :cols = "$vuetify.breakpoint.smAndDown ? '12' : '8'"  class = "pb-0">
+    <v-row v-for="a in articles" v-bind:key="a.title" justify="center" align="center" class = "d-flex flex-wrap align-content-space-around white pt-5 pl-5 pr-0 pb-0 ma-0">
+      <v-col :cols = "$vuetify.breakpoint.smAndDown ? '12' : '8'">
       <a target = "self" class="blog-post" :href ="a.link">
         <v-card elevation="2" outlined color="black" class="blog-post">
           <v-list-item four-line class="pr-0">
@@ -60,7 +60,7 @@
               color='transparent'
               class = "pa-0 my-0 ml-5 mr-5"
             >
-            <v-img src="/blog-imgs/logo-aa.png" class="rounded"></v-img>
+            <v-img :src=a.img class="rounded"></v-img>
             </v-list-item-avatar>
           </v-list-item>
 
@@ -72,7 +72,7 @@
       <v-col cols="12" class="pb-0">
       </v-col>
     </v-row>
-    <v-row justify="center" align="center" class="white pt-10 ma-0 pb-0">
+    <v-row justify="center" align="center" class="white pt-16 ma-0 pb-0">
       <v-col cols="12" class="pb-0">
       </v-col>
     </v-row>
@@ -139,6 +139,8 @@
                     {type: 'mdi-email', link: "mailto:hello@anishaggarwal.ca"}
                   ],
             articles: [
+                        {title: "Winning WinHacks 2021", date: "29 March 2021", description: "My team and I won WinHacks 2021 through the project - ChatSpace VR.", category: "Projects", img:"/blog-imgs/winhacks.png", link: "/blog/winhacks"},
+                        {title: "HTN Challenges", date: "23 March 2021", description: "My solutions for the Hack The North Frontend and Backend challenges.", category: "Experiences", img:"/blog-imgs/htn.png", link: "/blog/htn-application"},
                         {title: "My First Post - Blog #0", date: "01 March 2021", description: "The start of the life of my blog.", category: "Miscellaneous", img:"/blog-imgs/logo-aa.png", link: "/blog/my-first-post"}
             ]
         }),
@@ -156,15 +158,10 @@
             } else{
             this.curCount += 1
             }
-            console.log('waypoint going in!')
         }
     
         if (direction === this.$waypointMap.DIRECTION_TOP) {
-            console.log("HERE")
-            
-            console.log((this.navBarMode == false) && (this.curCount == this.changeCount))
             if ((!this.navBarMode) && (this.curCount == this.changeCount)){
-            console.log("Here1")
             this.appNavColor = "black"
             this.appNavPos = false
             } else if (this.navBarMode){
@@ -173,9 +170,8 @@
             } else{
             this.curCount += 1
             }
-            console.log('waypoint going top!')
         }
-        }
+      }
     }
 }
 </script>

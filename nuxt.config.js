@@ -46,7 +46,8 @@ export default {
     // With Options
     ['nuxt-highlightjs', {
       style: 'obsidian'
-    }]
+    }],
+    '@nuxt/content'
   ],
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

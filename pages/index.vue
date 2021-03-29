@@ -293,15 +293,10 @@ export default {
         } else{
           this.curCount += 1
         }
-        console.log('waypoint going in!')
       }
  
       if (direction === this.$waypointMap.DIRECTION_TOP) {
-        console.log("HERE")
-        
-        console.log((this.navBarMode == false) && (this.curCount == this.changeCount))
         if ((!this.navBarMode) && (this.curCount == this.changeCount)){
-          console.log("Here1")
           this.appNavColor = "black"
           this.appNavPos = false
         } else if (this.navBarMode){
@@ -310,7 +305,6 @@ export default {
         } else{
           this.curCount += 1
         }
-        console.log('waypoint going top!')
       }
     }
   }
