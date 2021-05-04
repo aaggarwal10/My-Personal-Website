@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    
+    <meta property='og:image' content='/blog-imgs/logo-aa.png'/>
     <v-app-bar fixed app dense :color = appNavColor :absolute = appNavPos> <!--black / remove abs -->
         <v-tabs centered color="white" hide-slider show-arrows>
             <v-tabs-slider></v-tabs-slider>
@@ -162,18 +162,18 @@
            <br>
            <span class ="contact-title"> &emsp; "age"</span><span class ="contact-colon">:</span>
            <span class ="contact-int">&nbsp;18 </span>
-           <span class ="contact-colon"> ; </span>
+           <span class ="contact-colon">; </span>
            <br>
            <span class ="contact-title"> &emsp; "email"</span><span class ="contact-colon">:</span>
-           <a href="mailto:hello@anishaggarwal.ca" style="text-decoration: none" class="link">&nbsp;"hello@anishaggarwal.ca" </a>
+           <a href="mailto:hello@anishaggarwal.ca" style="text-decoration: none" class="link">&nbsp;"hello@anishaggarwal.ca"</a>
            <span class ="contact-colon">; </span>
            <br>
            <span class ="contact-title"> &emsp; "github"</span><span class ="contact-colon">:</span>
-           <a href="https://github.com/aaggarwal10" style="text-decoration: none" class="link">&nbsp;"https://github.com/aaggarwal10" </a>
+           <a href="https://github.com/aaggarwal10" style="text-decoration: none" class="link">&nbsp;"https://github.com/aaggarwal10"</a>
            <span class ="contact-colon">; </span>
            <br>
            <span class ="contact-title"> &emsp; "linkedin"</span><span class ="contact-colon">:</span>
-           <a href="https://www.linkedin.com/in/aaggarwal10/" style="text-decoration: none" class="link">&nbsp;"https://www.linkedin.com/in/aaggarwal10/" </a>
+           <a href="https://www.linkedin.com/in/aaggarwal10/" style="text-decoration: none" class="link">&nbsp;"https://www.linkedin.com/in/aaggarwal10/"</a>
            <span class ="contact-colon">; </span>
            <br>
            <span> } </span>
