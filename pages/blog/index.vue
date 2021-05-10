@@ -139,6 +139,7 @@
                     {type: 'mdi-email', link: "mailto:hello@anishaggarwal.ca"}
                   ],
             articles: [
+                        {title: "My HackKU 2021 Experience", date: "15 May 2021", description: "I participated in a hackathon @ the Universty of Kansas with DiscourseVR.", category: "Projects", img:"/blog-imgs/hackku.png", link: "/blog/hackku"},
                         {title: "Winning WinHacks 2021", date: "29 March 2021", description: "My team and I won WinHacks 2021 through the project - ChatSpace VR.", category: "Projects", img:"/blog-imgs/winhacks.png", link: "/blog/winhacks"},
                         {title: "HTN Challenges", date: "23 March 2021", description: "My solutions for the Hack The North Frontend and Backend challenges.", category: "Experiences", img:"/blog-imgs/htn.png", link: "/blog/htn-application"},
                         {title: "My First Post - Blog #0", date: "01 March 2021", description: "The start of the life of my blog.", category: "Miscellaneous", img:"/blog-imgs/logo-aa.png", link: "/blog/my-first-post"}

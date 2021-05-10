@@ -150,42 +150,33 @@
   
     <v-row justify="center" align="center" id="contact" class = "mt-0">
      <v-col cols="12" class="py-0 mt-0">
-       <v-parallax src="/skating.jpg" height="500">
-        <v-overlay absolute black opacity = "0.6" align = "left">
-         <h2 class="display-3 font-weight-bold white--text text-center mb-8 pt-0 mt-0" id="about">Contact Me</h2>
-         <v-card color="grey darken-4" class ="pa-5 ma-10"> 
-           <span> { </span>
-           <br>
-           <span class ="contact-title"> &emsp; "name"</span><span class ="contact-colon">:</span>
-           <span class ="contact-str">&nbsp;"Anish Aggarwal" </span>
-           <span class ="contact-colon">; </span>
-           <br>
-           <span class ="contact-title"> &emsp; "age"</span><span class ="contact-colon">:</span>
-           <span class ="contact-int">&nbsp;18 </span>
-           <span class ="contact-colon">; </span>
-           <br>
-           <span class ="contact-title"> &emsp; "email"</span><span class ="contact-colon">:</span>
-           <a href="mailto:hello@anishaggarwal.ca" style="text-decoration: none" class="link">&nbsp;"hello@anishaggarwal.ca"</a>
-           <span class ="contact-colon">; </span>
-           <br>
-           <span class ="contact-title"> &emsp; "github"</span><span class ="contact-colon">:</span>
-           <a href="https://github.com/aaggarwal10" style="text-decoration: none" class="link">&nbsp;"https://github.com/aaggarwal10"</a>
-           <span class ="contact-colon">; </span>
-           <br>
-           <span class ="contact-title"> &emsp; "linkedin"</span><span class ="contact-colon">:</span>
-           <a href="https://www.linkedin.com/in/aaggarwal10/" style="text-decoration: none" class="link">&nbsp;"https://www.linkedin.com/in/aaggarwal10/"</a>
-           <span class ="contact-colon">; </span>
-           <br>
-           <span> } </span>
-         
-         </v-card>
+       <v-parallax src="/skating.jpg" height="600">
+        <v-overlay absolute black opacity = "0.6" align = "left" class = "pt-16">
+         <h2 class="display-3 font-weight-bold white--text text-center mb-8 pt-0" id="about">Contact Me</h2>
+         <pre><code v-highlight class="python caption pa-3" color="black">import json
+anish_data = {
+  "name": "Anish Aggarwal",
+  "age": 18,
+  "from": "Windsor, Ontario",
+  "occupation": "Computer Science Student",
+  "location": "University of Waterloo",
+  "contact-links": {
+    "email": "<a href="mailto:hello@anishaggarwal.ca" class="link">hello@anishaggarwal.ca</a>",
+    "github": "<a href="https://github.com/aaggarwal10" class="link">https://github.com/aaggarwal10</a>",
+    "linkedin": "<a href="https://www.linkedin.com/in/aaggarwal10/" class="link">https://www.linkedin.com/in/aaggarwal10/</a>",
+    "devpost": "<a href="https://devpost.com/aaggarwal10" class="link">https://devpost.com/aaggarwal10</a>"
+  }
+} 
+f_out = open("anish_data-{{ new Date().getMonth() + 1 }}/{{ new Date().getDate() }}/{{ new Date().getFullYear() }}.json", 'w')
+json.dump(anish_data, f_out)
+f_out.close()</code></pre>
         </v-overlay>
        </v-parallax>
      </v-col>
    </v-row>
 
-  <v-container class="pa-12"></v-container>
   <v-container class="pa-11"></v-container>
+  <v-container class="pa-12"></v-container>
    <v-footer padless app absolute>
         <v-card
       flat
@@ -337,9 +328,13 @@ export default {
 
 }
 a.link{
-  color: #376b98;
+  text-decoration: underline;
+  text-decoration-color: #ec7600;
 }
 a.link:hover{
-  color: rgb(63, 72, 117);
+  text-decoration: none;
+}
+.v-application code {
+    background-color: rgb(32, 29, 29);
 }
 </style>
