@@ -242,6 +242,8 @@ export default {
         {name: "Augmented Reality"},
       ],  
     projects: [
+        {name: "Discourse VR", description: "A debate analyser that allows for directed feed back and recordings of parliamentary debates.", imgsrc: "/projects/discourse.jpg", ref: "https://devpost.com/software/discoursevr"},
+        {name: "ChatSpace VR", description: "WinHacks 2021 Winner! A virtual space that allows users to play table activities, go on campus walks, and voice chat.", imgsrc: "/projects/chatspace.jpg", ref: "https://devpost.com/software/chatspace-vr"},
         {name: "Perfect Snake AI", description:"Using Graph Theory and a Hamiltonian Cycle Generator to make the perfect snake game on odd grids.", imgsrc: "/projects/smartsnake.gif", ref:"https://github.com/aaggarwal10/Artificial-Intelligence/tree/main/Classic%20Snake%20AI/Hamiltonian%20Method"},
         {name: "Open World VR App", description: "Using Unity, Windows Mixed Reality Headset, and a Xbox 360 Kinect to put players into an Open World VR game.", imgsrc: "/projects/vropenworld.gif", ref:"https://github.com/Breality/ICS4U-FSEV2"},
         {name: "VR Home Modeling", description:"Using voice activated commands, you can (virtually) place furniture items in your house. When you like what you see, you can get the retail prices of your items.", imgsrc: "/projects/vrhouse.png", ref: "https://github.com/Breality/virtualhousemodelling"},
