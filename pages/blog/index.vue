@@ -9,7 +9,7 @@
         </v-tabs>
     </v-app-bar>
     <v-img
-        src = "/bkg_overlay.gif" 
+        src = "/bkg_overlay.jpg" 
         eager
         height="100vh"
         class="mb-0"
@@ -32,7 +32,7 @@
 
     <v-row justify="center" align="center" class="white pt-16 pb-0">
       <v-col cols="12" class="pb-0">
-        <h2 class="display-3 font-weight-bold black--text mt-2 mb-6" id="blog" align="center">My Blog</h2>
+        <h2 class="display-3 font-weight-bold black--text mb-6" id="blog" align="center">My Blog</h2>
       </v-col>
     </v-row>
     <v-row v-for="a in articles" v-bind:key="a.title" justify="center" align="center" class = "d-flex flex-wrap align-content-space-around white pt-5 pl-5 pr-0 pb-0 ma-0">
