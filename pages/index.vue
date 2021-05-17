@@ -17,7 +17,7 @@
         </v-tabs>
     </v-app-bar>
     <v-img
-        src = "/bkg_overlay.gif" 
+        src = "/bkg_overlay.jpg" 
         eager
         height="100vh"
         class="mb-0"
